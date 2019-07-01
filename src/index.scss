@@ -1,0 +1,22 @@
+@import './assets/variables';
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: map-get($color, dkgray);
+
+    #container{
+        padding: 15px;
+        padding-top: 90px;
+    }
+}
+
+
+

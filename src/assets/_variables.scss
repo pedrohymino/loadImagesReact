@@ -1,0 +1,19 @@
+$color:(
+  default:    #247ee6,
+  secundary:  #0f43b1,
+
+  blue:       #247ee6,
+  green:      #6edfbd,
+  gray:       #aabbcc,
+  dkgray:     #425666,
+);
+
+
+@each $key, $value in $color {
+    .text-#{$key}, .text-#{$key} *{
+      color: #{$value} !important;
+    }
+    .bg-#{$key}{
+      background: #{$value};
+    }
+}
